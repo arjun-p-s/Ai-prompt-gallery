@@ -72,9 +72,11 @@ export function PromptGallery() {
   return (
     <>
       <SearchSection searchQuery={searchQuery} onSearchChange={setSearchQuery} />
-      <CategoryTabs activeCategory={activeCategory} onSelectCategory={setActiveCategory} />
+      <div id="categories" className="scroll-mt-20">
+        <CategoryTabs activeCategory={activeCategory} onSelectCategory={setActiveCategory} />
+      </div>
       
-      <section className="container mx-auto px-4 md:px-8 pb-24">
+      <section id="explore" className="container mx-auto px-4 md:px-8 pb-24 scroll-mt-20">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
           {filteredPrompts.map((prompt, index) => (
             <PromptCard key={prompt.id} prompt={prompt} index={index} />

@@ -26,20 +26,20 @@ export function Navbar() {
               Home
             </Link>
             <Link
-              href="/categories"
+              href="/#categories"
               className="transition-colors hover:text-foreground/80 text-foreground/60"
             >
               Categories
             </Link>
             <Link
-              href="/explore"
+              href="/#explore"
               className="transition-colors hover:text-foreground/80 text-foreground/60"
             >
               Explore
             </Link>
             <Link
               href="/about"
-              className="transition-colors hover:text-foreground/80 text-foreground/60"
+              className="hidden transition-colors hover:text-foreground/80 text-foreground/60"
             >
               About
             </Link>
